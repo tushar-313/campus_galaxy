@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: white;
+  min-height: 100vh;
+}
+
+.navbar {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.create-post, .post {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  animation: fadeIn 0.4s ease;
+}
+
+.create-post input,
+.create-post textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.create-post button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #00c6ff;
+  cursor: pointer;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status.open {
+  background: orange;
+}
+
+.status.resolved {
+  background: green;
+}
+
+.auth-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  animation: slideUp 0.5s ease;
+}
+
+.auth-card input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.auth-card button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background: #00c6ff;
+  border: none;
+  border-radius: 8px;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
