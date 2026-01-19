@@ -1,0 +1,126 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* BODY */
+body {
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* 🌌 GALAXY BACKGROUND */
+.galaxy {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 30%, #7f00ff55, transparent 40%),
+    radial-gradient(circle at 80% 20%, #00c6ff55, transparent 40%),
+    radial-gradient(circle at 50% 80%, #ff008055, transparent 40%),
+    linear-gradient(120deg, #05010f, #02030a);
+  animation: galaxyMove 12s infinite alternate ease-in-out;
+  z-index: -1;
+}
+
+@keyframes galaxyMove {
+  from { transform: scale(1) translateY(0); }
+  to { transform: scale(1.1) translateY(-20px); }
+}
+
+/* 🪟 GLASS CARD */
+.auth-card {
+  width: 360px;
+  padding: 32px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.6);
+  animation: fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* TEXT */
+.auth-card h2 {
+  font-size: 24px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 24px;
+}
+
+/* INPUTS */
+.auth-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.12);
+  color: white;
+  font-size: 14px;
+  transition: box-shadow 0.3s, background 0.3s;
+}
+
+.auth-card input:focus {
+  background: rgba(255,255,255,0.18);
+  box-shadow: 0 0 0 2px #7f00ff;
+}
+
+/* 🚀 BUTTON */
+.auth-card button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(135deg, #7f00ff, #00c6ff, #ff0080);
+  background-size: 200% 200%;
+  animation: gradientMove 4s infinite linear;
+  box-shadow: 0 10px 30px #7f00ff55;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.auth-card button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 20px 40px #7f00ff88;
+}
+
+/* SWITCH */
+.switch {
+  margin-top: 16px;
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.switch a {
+  color: #00c6ff;
+  text-decoration: none;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}

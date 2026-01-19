@@ -1,20 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Register</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>Register | Campus Connect</title>
+  <link rel="stylesheet" href="css/register.css" />
 </head>
-<body class="auth-body">
+<body>
 
-<div class="auth-card">
-  <h2>Register</h2>
-  <input id="name" placeholder="Name">
-  <input id="email" placeholder="Email">
-  <input id="password" type="password" placeholder="Password">
-  <button onclick="register()">Register</button>
-  <p>Already registered? <a href="login.html">Login</a></p>
-</div>
+  <!-- Galaxy Background -->
+  <div class="galaxy"></div>
 
-<script src="js/auth.js"></script>
+  <!-- Register Card -->
+  <div class="auth-card">
+    <h2>Create Account</h2>
+    <p class="subtitle">Join the campus galaxy ✨</p>
+
+    <input id="name" placeholder="Your name" />
+    <input id="email" placeholder="Email address" />
+    <input id="password" type="password" placeholder="Password" />
+
+    <button onclick="register()">Create Account</button>
+
+    <p class="switch">
+      Already have an account?
+      <a href="login.html">Login</a>
+    </p>
+  </div>
+
+  <script src="js/auth.js"></script>
 </body>
 </html>
