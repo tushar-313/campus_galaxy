@@ -44,68 +44,72 @@ The project focuses on real-world backend development, authentication, and cloud
 ---
 
 ## 📂 Project Structure
-campus_galaxy
-├── backend
-│ ├── routes
-│ ├── controllers
-│ ├── middleware
-│ ├── db.js
-│ └── server.js
+campus_galaxy/
+├── backend/
+│   ├── routes/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── db.js
+│   └── server.js
 │
-├── frontend
-│ ├── css
-│ ├── js
-│ ├── index.html
-│ ├── login.html
-│ └── register.html
+├── frontend/
+│   ├── css/
+│   ├── js/
+│   ├── index.html
+│   ├── login.html
+│   └── register.html
 │
 └── README.md
 
-🔐 Authentication Flow
 
-User logs in with email and password
 
-Backend generates a JWT token
+## 🔐 Authentication Flow
 
-Token is stored in the browser
+- User logs in with email and password  
+- Backend generates a JWT token  
+- Token is stored in the browser  
+- Unauthenticated users are redirected to the login page 
 
-Unauthenticated users are redirected to the login page
+## ⚙️ Environment Variables
 
-⚙️ Environment Variables
+Create a `.env` file for local development.
+In production, environment variables are configured on the hosting platform.
 
-Create a .env file inside the backend folder:
 
-JWT_SECRET=your_secret_key
-MYSQL_URL=your_mysql_public_url
-
-🧪 Run Locally
+## 🧪 Run Locally
 
 Steps:
 
-Clone the repository
-
-Go to the backend folder
-
-Install dependencies
-
-Start the server
+1. Clone the repository  
+2. Navigate to the `backend` folder  
+3. Install dependencies  
+4. Start the server  
 
 Open in browser:
 http://localhost:3000
 
-☁️ Deployment
 
-Backend deployed on Render
+---
 
-MySQL database hosted on Railway
+## ☁️ Deployment
 
-Uptime monitoring used to avoid cold starts
+- Backend deployed on Render
+- MySQL database hosted on Railway
+- The application is accessed via a public Render URL
+- Environment variables are configured on the hosting platform
+- Uptime monitoring is used to reduce cold starts
 
-👨‍💻 Author
 
-Tushar Agarwal
-B.Tech CSE, IIIT Nagpur
+---
 
-📌 Note
+## 👨‍💻 Author
+
+**Tushar Agarwal**  
+B.Tech CSE, IIIT Nagpur  
+
+---
+
+## 📌 Note
 
 This project was built for learning full-stack development and real deployment workflows.
+
