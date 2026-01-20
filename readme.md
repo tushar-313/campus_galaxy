@@ -44,6 +44,7 @@ The project focuses on real-world backend development, authentication, and cloud
 ---
 
 ## 📂 Project Structure
+```
 campus_galaxy/
 ├── backend/
 │   ├── routes/
@@ -60,6 +61,8 @@ campus_galaxy/
 │   └── register.html
 │
 └── README.md
+```
+
 
 
 
