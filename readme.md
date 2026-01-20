@@ -45,12 +45,12 @@ The project focuses on real-world backend development, authentication, and cloud
 
 ## 📂 Project Structure
 campus_galaxy
--├── backend
--│ ├── routes
--│ ├── controllers
--│ ├── middleware
--│ ├── db.js
--│ └── server.js
+├── backend
+│ ├── routes
+│ ├── controllers
+│ ├── middleware
+│ ├── db.js
+│ └── server.js
 │
 ├── frontend
 │ ├── css
